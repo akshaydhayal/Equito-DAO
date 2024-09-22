@@ -281,7 +281,7 @@ contract EquitoVote is EquitoApp, ReentrancyGuard {
         uint256 numberUserDelegatedTokens = getAmountDelegatedTokens(
             msg.sender,
             tokenAddress,
-            proposalId,
+            proposalId, 
             isGetPastVotesEnabled
         );
 
