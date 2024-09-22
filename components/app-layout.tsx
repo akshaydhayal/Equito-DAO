@@ -15,7 +15,7 @@ import { wagmiConfig } from "../utils/wagmi";
 import { Navbar } from "@/components/navbar";
 import { EquitoVoteProvider } from "@/providers/equito-vote-provider";
 import { Toast } from "@/components/toast";
-import { Footer } from "@/components/footer";
+// import { Footer } from "@/components/footer";
 import "@rainbow-me/rainbowkit/styles.css";
 import "../app/globals.css";
 
