@@ -2,7 +2,7 @@ import { FormattedProposal, ProposalDataItem, ProposalResponse } from "@/types";
 import { format } from "date-fns";
 import { Chain, SupportedChainsMap } from "./chains";
 
-export const PAGINATION_SIZE = 3;
+export const PAGINATION_SIZE = 20;
 
 // The order is important for this object.
 export const placeholderProposal: FormattedProposal = {

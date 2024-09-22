@@ -5,8 +5,9 @@ import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 export function Navbar() {
   return (
-    <nav>
-      <ul className="flex lg:flex-row flex-col lg:items-center mt-6 mb-8 justify-center">
+    <nav className="h-[10vh] border">
+      {/* <ul className="flex lg:flex-row flex-col lg:items-center mt-6 mb-8 justify-center"> */}
+      <ul className="flex lg:flex-row flex-col lg:items-center py-2 justify-center">
         <div className="flex flex-row flex-wrap mb-8 lg:mb-0 gap-y-6">
           <li className="mr-12 hover-glow">
             <Link href="/">PROPOSALS</Link>
@@ -21,7 +22,7 @@ export function Navbar() {
             <Link href="/faucet">FAUCET</Link>
           </li>
         </div>
-        <li className="lg:ml-auto">
+        <li className="lg:ml-auto ">
           <ConnectButton
             chainStatus="full"
             showBalance={false}

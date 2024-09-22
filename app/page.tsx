@@ -84,6 +84,10 @@ export default function HomePage() {
     [proposals],
   );
 
+  console.log('propo len : ',proposalsLength);
+  console.log('propo data : ',normalizedProposals);
+  console.log('propo dataa : ',proposals);
+
   const onChangePageNumber = (event: ChangeEvent<unknown>, value: number) => {
     setPageNumber(value);
     refetchProposals();
@@ -103,8 +107,8 @@ export default function HomePage() {
   }
 
   return (
-    <div>
-      <ul>
+    <div className="border-x pt-4 h-[90vh]">
+      <ul className="h-full overflow-scroll px-8">
         {normalizedProposals.map((item) => {
           const isActive = verifyIsProposalActive(item as FormattedProposal);
           const originChainImg =
