@@ -52,7 +52,7 @@ export function AppLayout({
                     <CssBaseline />
                     <div className="flex flex-row justify-center">
                       {/* <div className="" style={{ width: "1200px" }}> */}
-                      <div className="">
+                      <div className="w-full">
                         <Navbar />
                         <main>{children}</main>
                       </div>

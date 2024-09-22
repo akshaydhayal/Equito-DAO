@@ -107,8 +107,10 @@ export default function HomePage() {
   }
 
   return (
-    <div className="border-x pt-4 h-[90vh]">
-      <ul className="h-full overflow-scroll px-8">
+    <div className="h-[90vh] flex justify-center">
+      <div className="border-x border-x-slate-400 w-[80vw] pt-8 overflow-scroll ">
+
+      <ul className="h-full px-8">
         {normalizedProposals.map((item) => {
           const isActive = verifyIsProposalActive(item as FormattedProposal);
           const originChainImg =
@@ -200,6 +202,7 @@ export default function HomePage() {
           />
         </div>
       )}
+      </div>
     </div>
   );
 }
